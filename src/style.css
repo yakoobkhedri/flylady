@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#Exchange.active,
+#languages.active {
+    display: block;
+}
+
+#mobileMnu {
+    left: -444px;
+}
+
+#mobileMnu::-webkit-scrollbar {
+    @apply bg-violet-600 w-1
+}
+
+#mobileMnu.active {
+    left: 0;
+}
+
+.banner {
+    background-image: url('assets/img/bg.png');
+    height: 844px;
+    margin-top: -164px;
+}
+
+.signUpbanner {
+    background-image: url('assets/img/common-banner.png');
+    height: 394px;
+    margin-top: -136px;
+}
+
+.counterBg {
+    background-image: url('assets/img/counter_bg1.png');
+}
+
+.acardeonRow.active {
+    box-shadow: 0 0 8px lightgray;
+}
+
+.arrow.active {
+    transform: rotate('180deg');
+}
+
+.acardeonDesc {
+    max-height: 0;
+    display: none;
+    transition: all .4s;
+}
+
+.acardeonDesc.active {
+    max-height: 400px;
+    display: block;
+}
+
+#rightMenu {
+    right: -400px;
+}
+
+#rightMenu.open {
+    right: 0;
+}
+
+#menuMobile {
+    max-height: 0;
+    transition: all .4s;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menuMobile.active {
+    max-height: 990px;
+    padding: 20px;
+}
+
+.acardeonContent {
+    transition: all .4s;
+    max-height: 0;
+}
+
+.acardeonContent.active {
+    max-height: 990px;
+}
+
+#searchContent {
+    right: -1937px;
+    top: 0;
+    bottom: 0;
+}
+
+#searchContent.active {
+    right: 0;
+}
+
+#searchContent2 {
+    right: -1937px;
+    top: 0;
+    bottom: 0;
+}
+
+#searchContent2.active {
+    right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .dropdown {
+        max-height: 0;
+    }
+    .dropdown.open {
+        max-height: 2000px;
+    }
+}
