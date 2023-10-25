@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <section class="banner bg-no-repeat bg-center flex justify-center items-center">
         <div class="text-white">
             <h1 class="text-5xl text-center md:text-7xl font-bold" id="bannerTitle">Explore the world together</h1>
@@ -31,9 +32,9 @@
                 </div>
             </div>
             <div class="flex items-center gap-7" id="ways">
-                <p class="text-violet-600 cursor-pointer flightBtn" id="OneWayBtn" onclick="showOneWay()">One Way</p>
-                <p class="cursor-pointer flightBtn" id="RoundtripBtn" onclick="showRoundtripy()">Roundtrip</p>
-                <p class="cursor-pointer flightBtn" id="MultiCityBtn" onclick="showMultiCity()">Multi city</p>
+                <p class="text-violet-600 cursor-pointer flightBtn" id="OneWayBtn">One Way</p>
+                <p class="cursor-pointer flightBtn" id="RoundtripBtn">Roundtrip</p>
+                <p class="cursor-pointer flightBtn" id="MultiCityBtn">Multi city</p>
             </div>
         </div>
         <div id="flights">
@@ -455,7 +456,7 @@
 
     <section class="container mx-auto Explore mt-24 px-4">
         <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold" id="hotdeals">Explore our hot deals</h2>
-        <div class="w-3/5 mx-auto mt-24 shadow-2xl rounded-xl flex flex-wrap gap-2 items-center justify-around py-6">
+        <div class="max-w-5xl w-full px-4 border mx-auto mt-24 shadow-2xl rounded-xl flex flex-wrap gap-2 items-center justify-around py-6">
             <div id="Hotels2" class="rounded border-2 bg-violet-600 text-white border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                 Hotels
             </div>
@@ -471,8 +472,8 @@
         </div>
         <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-24 gap-7 px-4">
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel1.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel1.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -493,8 +494,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel2.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel2.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -515,8 +516,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel3.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel3.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -537,8 +538,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel4.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel4.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -559,8 +560,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel5.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel5.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -581,8 +582,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel6.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel6.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -603,8 +604,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel7.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel7.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -625,8 +626,8 @@
                 </div>
             </div>
             <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                <div class="relative overflow-hidden h-60">
-                    <img src="../assets/img/hotel8.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                <div class="relative overflow-hidden h-72">
+                    <img src="../assets/img/hotel8.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                     <div class="absolute flex items-center text-white bottom-3 left-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -692,12 +693,12 @@
     <section class="container mx-auto bestpromotional mt-24 px-4">
         <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">Our best promotional tours</h2>
         <!-- Swiper -->
-        <div class="swiper mySwiper1 mt-24 h-[454px]">
+        <div class="swiper mySwiper1 mt-24 pb-14 md:px-6" ref="bestTours">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                        <div class="relative overflow-hidden h-60">
-                            <img src="../assets/img/hotel1.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="../assets/img/hotel1.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                             <div class="absolute flex items-center text-white bottom-3 left-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -720,8 +721,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                        <div class="relative overflow-hidden h-60">
-                            <img src="../assets/img/hotel2.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="../assets/img/hotel2.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                             <div class="absolute flex items-center text-white bottom-3 left-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -744,8 +745,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                        <div class="relative overflow-hidden h-60">
-                            <img src="../assets/img/hotel3.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="../assets/img/hotel3.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                             <div class="absolute flex items-center text-white bottom-3 left-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -768,8 +769,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                        <div class="relative overflow-hidden h-60">
-                            <img src="../assets/img/hotel4.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="../assets/img/hotel4.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                             <div class="absolute flex items-center text-white bottom-3 left-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -792,8 +793,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                        <div class="relative overflow-hidden h-60">
-                            <img src="../assets/img/hotel2.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="../assets/img/hotel2.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                             <div class="absolute flex items-center text-white bottom-3 left-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -816,8 +817,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="border rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                        <div class="relative overflow-hidden h-60">
-                            <img src="../assets/img/hotel3.png" alt="" class="group-hover:scale-125 transition-all duration-500 absolute inset-0 w-full cursor-pointer">
+                        <div class="relative overflow-hidden h-72">
+                            <img src="../assets/img/hotel3.png" alt="" class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
                             <div class="absolute flex items-center text-white bottom-3 left-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
@@ -839,13 +840,12 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
 
     <section class="container mx-auto yourdestinations mt-24 px-4">
         <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">Destinations for you</h2>
-        <div class="w-3/4 mx-auto mt-24 shadow-xl rounded-xl flex flex-wrap gap-4 items-center justify-around py-6">
+        <div class="w-full max-w-5xl mx-auto mt-24 px-5 border shadow-xl rounded-xl flex flex-wrap gap-4 items-center justify-around py-6">
             <div class="rounded border-2 bg-violet-600 text-white border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                 Nepal
             </div>
@@ -869,7 +869,7 @@
             </div>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-24 gap-6">
-            <div class="flex items-center border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
+            <div class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
                 <img src="../assets/img/destination-small1.png">
                 <div class="p-5">
                     <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest trek to Base Camp</a>
@@ -879,7 +879,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
+            <div class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
                 <img src="../assets/img/destination-small2.png">
                 <div class="p-5">
                     <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest trek to Base Camp</a>
@@ -889,7 +889,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
+            <div class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
                 <img src="../assets/img/destination-small3.png">
                 <div class="p-5">
                     <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest trek to Base Camp</a>
@@ -899,7 +899,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
+            <div class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
                 <img src="../assets/img/destination-small4.png">
                 <div class="p-5">
                     <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest trek to Base Camp</a>
@@ -909,7 +909,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
+            <div class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
                 <img src="../assets/img/destination-small5.png">
                 <div class="p-5">
                     <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest trek to Base Camp</a>
@@ -919,7 +919,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
+            <div class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-2xl">
                 <img src="../assets/img/destination-small6.png">
                 <div class="p-5">
                     <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest trek to Base Camp</a>
@@ -937,40 +937,40 @@
         <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">Latest travel news</h2>
         <div class="grid lg:grid-cols-2 grid-cols-1 justify-center gap-4 mt-20">
             <div>
-                <div class="flex items-center overflow-hidden bg-white">
+                <div class="flex items-scretch mb-4 overflow-hidden bg-white">
                     <img src="../assets/img/destination-small6.png">
                     <div class="p-5">
-                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer pr-36">Revolutionising the travel industry, one partnership at a time</a>
+                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">Revolutionising the travel industry, one partnership at a time</a>
                         <div class="flex items-center">
                             <span class="text-violet-600 font-bold ml-2">26 Oct 2021</span>
                             <span class="font-bold text-gray-600 ml-7">5min read</span>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center overflow-hidden bg-white">
+                <div class="flex items-scretch mb-4 overflow-hidden bg-white">
                     <img src="../assets/img/small2.png">
                     <div class="p-5">
-                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer pr-36">it is a long established fact that a reader will be distracted.</a>
+                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">it is a long established fact that a reader will be distracted.</a>
                         <div class="flex items-center">
                             <span class="text-violet-600 font-bold ml-2">26 Oct 2021</span>
                             <span class="font-bold text-gray-600 ml-7">5min read</span>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center overflow-hidden bg-white">
+                <div class="flex items-scretch mb-4 overflow-hidden bg-white">
                     <img src="../assets/img/small3.png">
                     <div class="p-5">
-                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer pr-36">There are many variations of passages of sum available</a>
+                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">There are many variations of passages of sum available</a>
                         <div class="flex items-center">
                             <span class="text-violet-600 font-bold ml-2">26 Oct 2021</span>
                             <span class="font-bold text-gray-600 ml-7">5min read</span>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center overflow-hidden bg-white">
+                <div class="flex items-scretch mb-4 overflow-hidden bg-white">
                     <img src="../assets/img/small4.png">
                     <div class="p-5">
-                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer pr-36">Contrary to popular belief, Lorem Ipsum is not simply.</a>
+                        <a class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">Contrary to popular belief, Lorem Ipsum is not simply.</a>
                         <div class="flex items-center">
                             <span class="text-violet-600 font-bold ml-2">26 Oct 2021</span>
                             <span class="font-bold text-gray-600 ml-7">5min read</span>
@@ -1008,28 +1008,34 @@
     <section class="container mx-auto Ourpartners mt-24 px-4">
         <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">Our partners</h2>
         <!-- Swiper -->
-        <div class="swiper mySwiper2 mt-24 h-[217px]">
+        <div class="swiper mySwiper2 my-24" ref="brands">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="../assets/img/1.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/1.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/img/2.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/2.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/img/3.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/3.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/img/4.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/4.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/img/5.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/5.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/img/6.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/6.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/img/8.png" alt="" class="transition-all duration-200 cursor-pointer contrast-0 hover:contrast-200">
+                    <img src="../assets/img/8.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/6.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/8.png" alt="" class="transition-all duration-200 block mx-auto cursor-pointer contrast-0 hover:contrast-200">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -1038,8 +1044,8 @@
 
     <section class="newsLetter bg-[#F3F6FD] py-24 px-4">
         <div class="container mx-auto">
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-7">
-                <div class="flex items-center">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-7 text-center sm:text-start">
+                <div class="flex flex-wrap justify-center md:justify-start items-center">
                     <img src="../assets/img/email.png" alt="" class="w-36">
                     <div class="ml-4">
                         <p class="font-bold mb-2 mt-2 text-xl">Get the latest news and offers</p>
@@ -1055,11 +1061,69 @@
             </div>
         </div>
     </section>
+
   </div>
 </template>
 
 <script>
+import Swiper from "swiper";
+import "swiper/swiper-bundle.css";
+import SwiperCore from 'swiper/core';
+
+SwiperCore.use()
+
 export default {
+
+    mounted() {
+        new Swiper(this.$refs.bestTours, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 9,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 24,
+                },
+                1020: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+            },
+        }),
+        new Swiper(this.$refs.brands, {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 9,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            breakpoints: {
+                576: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+                876: {
+                    slidesPerView: 5,
+                    spaceBetween: 24,
+                },
+                1280: {
+                    slidesPerView: 7,
+                    spaceBetween: 24,
+                },
+            },
+        })
+    }
 
 }
 </script>
