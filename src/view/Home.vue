@@ -3,17 +3,16 @@
 
         <section class="banner bg-no-repeat bg-center flex justify-center items-center">
             <div class="text-white">
-                <h1 class="text-5xl text-center md:text-7xl font-bold" id="bannerTitle">Explore the world together</h1>
-                <h5 id="bannerSubTitle" class="text-center text-2xl mt-4">Find awesome flights, hotel, tour, car and
-                    packages</h5>
+                <h1 class="text-5xl text-center md:text-7xl font-bold" id="bannerTitle">{{ $t("home.banner") }}</h1>
+                <h5 id="bannerSubTitle" class="text-center text-2xl mt-4"> {{ $t("home.bannerSubTitle") }} </h5>
             </div>
         </section>
 
         <section class="booking p-7 container mx-auto mt-[-166px] bg-white rounded-3xl shadow-lg overflow-hidden">
             <div class="flex md:justify-between justify-center gap-5 items-center font-bold flex-wrap">
                 <div class="flex items-center gap-7">
-                    <div class="tripType flex items-center rounded-lg border-2 bg-violet-600 text-white border-violet-600 py-2 px-4 gap-2 cursor-pointer"
-                        onclick="flightsTrip()">
+                    <div
+                        class="tripType flex items-center rounded-lg border-2 bg-violet-600 text-white border-violet-600 py-2 px-4 gap-2 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16 " height="16" fill="currentColor"
                             class="bi bi-airplane-fill rotate-45" viewBox="0 0 16 16">
                             <path
@@ -21,8 +20,8 @@
                         </svg>
                         <p id="flightTab">Flights</p>
                     </div>
-                    <div class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer"
-                        onclick="ToursTrip()">
+                    <div
+                        class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-globe" viewBox="0 0 16 16">
                             <path
@@ -30,8 +29,8 @@
                         </svg>
                         <p id="ToursTab">Tours</p>
                     </div>
-                    <div class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer"
-                        onclick="HotelsTrip()">
+                    <div
+                        class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-house-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -566,25 +565,30 @@
                 id="hotdeals">Explore our hot deals</h2>
             <div
                 class="max-w-5xl w-full px-4 border mx-auto mt-24 shadow-lg rounded-xl flex flex-wrap gap-2 items-center justify-around py-6">
-                <div @click="toggleTabs(1)" :class="{'text-black bg-transparent': openTab !== 1,'bg-violet-600 text-white': openTab === 1,}"
-                 class="rounded border-2  border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleTabs(1)"
+                    :class="{ 'text-black bg-transparent': openTab !== 1, 'bg-violet-600 text-white': openTab === 1, }"
+                    class="rounded border-2  border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Hotels
                 </div>
-                <div @click="toggleTabs(2)" :class="{'text-black bg-transparent': openTab !== 2,'bg-violet-600 text-white': openTab === 2,}"
-                 class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleTabs(2)"
+                    :class="{ 'text-black bg-transparent': openTab !== 2, 'bg-violet-600 text-white': openTab === 2, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Tours
                 </div>
-                <div @click="toggleTabs(3)" :class="{'text-black bg-transparent': openTab !== 3,'bg-violet-600 text-white': openTab === 3,}"
-                 class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleTabs(3)"
+                    :class="{ 'text-black bg-transparent': openTab !== 3, 'bg-violet-600 text-white': openTab === 3, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Space
                 </div>
-                <div @click="toggleTabs(4)" :class="{'text-black bg-transparent': openTab !== 4,'bg-violet-600 text-white': openTab === 4,}"
-                 class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleTabs(4)"
+                    :class="{ 'text-black bg-transparent': openTab !== 4, 'bg-violet-600 text-white': openTab === 4, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Events
                 </div>
             </div>
             <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-24 gap-7 px-4">
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel1.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -610,7 +614,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel2.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -637,7 +642,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel3.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -664,7 +670,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel4.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -691,7 +698,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel5.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -718,7 +726,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel6.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -745,7 +754,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel7.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -772,7 +782,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel8.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -799,7 +810,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel1.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -825,7 +837,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel2.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -852,7 +865,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel3.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -879,7 +893,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel4.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -906,7 +921,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel5.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -933,7 +949,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel6.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -960,7 +977,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel7.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -987,7 +1005,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel8.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1014,7 +1033,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel1.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1040,7 +1060,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel2.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1067,7 +1088,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel3.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1094,7 +1116,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel4.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1121,7 +1144,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel5.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1148,7 +1172,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel7.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1175,7 +1200,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel8.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1202,7 +1228,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel1.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1228,7 +1255,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel2.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1255,7 +1283,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel3.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1282,7 +1311,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 4, block: openTab === 4 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel4.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1309,7 +1339,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 1, block: openTab === 1 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel5.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1336,7 +1367,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 2, block: openTab === 2 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel6.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1363,7 +1395,8 @@
                         </div>
                     </div>
                 </div>
-                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }" class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
+                <div v-bind:class="{ hidden: openTab !== 3, block: openTab === 3 }"
+                    class="border rounded-xl overflow-hidden group hover:shadow-lg transition-all duration-500">
                     <div class="relative overflow-hidden h-72">
                         <img src="../assets/img/hotel7.png" alt=""
                             class="group-hover:scale-125 h-full transition-all duration-500 absolute inset-0 w-full cursor-pointer">
@@ -1643,30 +1676,44 @@
                 Destinations for you</h2>
             <div
                 class="w-full max-w-5xl mx-auto mt-24 px-5 border shadow-xl rounded-xl flex flex-wrap gap-4 items-center justify-around py-6">
-                <div class="rounded border-2 bg-violet-600 text-white border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(1)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 1, 'bg-violet-600 text-white': openDestinationsTab === 1, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Nepal
                 </div>
-                <div class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(2)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 2, 'bg-violet-600 text-white': openDestinationsTab === 2, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Malaysia
                 </div>
-                <div class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(3)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 3, 'bg-violet-600 text-white': openDestinationsTab === 3, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Indonesia
                 </div>
-                <div class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(4)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 4, 'bg-violet-600 text-white': openDestinationsTab === 4, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Turkey
                 </div>
-                <div class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(5)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 5, 'bg-violet-600 text-white': openDestinationsTab === 5, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     China
                 </div>
-                <div class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(6)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 6, 'bg-violet-600 text-white': openDestinationsTab === 6, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Darjeeling
                 </div>
-                <div class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
+                <div @click="toggleDestinationsTabs(7)"
+                    :class="{ 'text-black bg-transparent': openDestinationsTab !== 7, 'bg-violet-600 text-white': openDestinationsTab === 7, }"
+                    class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
                     Italy
                 </div>
             </div>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-24 gap-6">
-                <div
+                <div v-bind:class="{ hidden: openDestinationsTab !== 1, flex: openDestinationsTab === 1 }"
                     class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
                     <img src="../assets/img/destination-small1.png">
                     <div class="p-5">
@@ -1679,7 +1726,7 @@
                         </div>
                     </div>
                 </div>
-                <div
+                <div v-bind:class="{ hidden: openDestinationsTab !== 1, flex: openDestinationsTab === 1 }"
                     class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
                     <img src="../assets/img/destination-small2.png">
                     <div class="p-5">
@@ -1692,7 +1739,7 @@
                         </div>
                     </div>
                 </div>
-                <div
+                <div v-bind:class="{ hidden: openDestinationsTab !== 2, flex: openDestinationsTab === 2 }"
                     class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
                     <img src="../assets/img/destination-small3.png">
                     <div class="p-5">
@@ -1705,7 +1752,7 @@
                         </div>
                     </div>
                 </div>
-                <div
+                <div v-bind:class="{ hidden: openDestinationsTab !== 2, flex: openDestinationsTab === 2 }"
                     class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
                     <img src="../assets/img/destination-small4.png">
                     <div class="p-5">
@@ -1718,7 +1765,7 @@
                         </div>
                     </div>
                 </div>
-                <div
+                <div v-bind:class="{ hidden: openDestinationsTab !== 3, flex: openDestinationsTab === 3 }"
                     class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
                     <img src="../assets/img/destination-small5.png">
                     <div class="p-5">
@@ -1731,7 +1778,85 @@
                         </div>
                     </div>
                 </div>
-                <div
+                <div v-bind:class="{ hidden: openDestinationsTab !== 3, flex: openDestinationsTab === 3 }"
+                    class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
+                    <img src="../assets/img/destination-small6.png">
+                    <div class="p-5">
+                        <a
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
+                            trek to Base Camp</a>
+                        <div class="flex items-center">
+                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="text-violet-600 font-bold ml-2">$105.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ hidden: openDestinationsTab !== 4, flex: openDestinationsTab === 4 }"
+                    class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
+                    <img src="../assets/img/destination-small1.png">
+                    <div class="p-5">
+                        <a
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
+                            trek to Base Camp</a>
+                        <div class="flex items-center">
+                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="text-violet-600 font-bold ml-2">$105.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ hidden: openDestinationsTab !== 5, flex: openDestinationsTab === 5 }"
+                    class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
+                    <img src="../assets/img/destination-small2.png">
+                    <div class="p-5">
+                        <a
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
+                            trek to Base Camp</a>
+                        <div class="flex items-center">
+                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="text-violet-600 font-bold ml-2">$105.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ hidden: openDestinationsTab !== 5, flex: openDestinationsTab === 5 }"
+                    class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
+                    <img src="../assets/img/destination-small3.png">
+                    <div class="p-5">
+                        <a
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
+                            trek to Base Camp</a>
+                        <div class="flex items-center">
+                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="text-violet-600 font-bold ml-2">$105.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ hidden: openDestinationsTab !== 6, flex: openDestinationsTab === 6 }"
+                    class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
+                    <img src="../assets/img/destination-small4.png">
+                    <div class="p-5">
+                        <a
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
+                            trek to Base Camp</a>
+                        <div class="flex items-center">
+                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="text-violet-600 font-bold ml-2">$105.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ hidden: openDestinationsTab !== 6, flex: openDestinationsTab === 6 }"
+                    class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
+                    <img src="../assets/img/destination-small5.png">
+                    <div class="p-5">
+                        <a
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
+                            trek to Base Camp</a>
+                        <div class="flex items-center">
+                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="text-violet-600 font-bold ml-2">$105.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ hidden: openDestinationsTab !== 7, flex: openDestinationsTab === 7 }"
                     class="flex items-stretch border rounded-lg overflow-hidden bg-white transition-all duration-500 hover:shadow-lg">
                     <img src="../assets/img/destination-small6.png">
                     <div class="p-5">
@@ -1812,12 +1937,12 @@
                     </a>
                 </div>
                 <div>
-                    <div class="w-full h-96 overflow-hidden rounded-2xl">
+                    <div class="w-full md:h-96 overflow-hidden rounded-2xl">
                         <img src="../assets/img/new-big.png" alt=""
                             class="w-full h-full transition-all duration-500 hover:scale-125 cursor-pointer">
                     </div>
                     <a
-                        class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer pr-36 my-5">There
+                        class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36 my-5">There
                         are many variations of passages available but</a>
                     <p class="text-xl text-gray-500">
                         It is a long established fact that a reader will be distracted by the readable content of. The point
@@ -1891,7 +2016,7 @@
             <div class="container mx-auto">
                 <div class="grid lg:grid-cols-2 grid-cols-1 gap-7 text-center sm:text-start">
                     <div class="flex flex-wrap justify-center md:justify-start items-center">
-                        <img src="../assets/img/email.png" alt="" class="w-36">
+                        <img src="../assets/img/email.png" alt="" class="md:w-36 w-24">
                         <div class="ml-4">
                             <p class="font-bold mb-2 mt-2 text-xl">Get the latest news and offers</p>
                             <h3 class="text-4xl font-bold">Subscribe to our newsletter</h3>
@@ -1916,20 +2041,28 @@
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 import SwiperCore from 'swiper/core';
-
 SwiperCore.use()
+// import { useI18n } from 'vue-i18n';
 
 export default {
 
+    setup() {
+    //   const { t } = useI18n()
+    //   return { t }
+    },
     data() {
         return {
             openTab: 1,
+            openDestinationsTab: 1,
         };
     },
     methods: {
         toggleTabs: function (tabNumber) {
             this.openTab = tabNumber;
         },
+        toggleDestinationsTabs: function (tabNumber) {
+            this.openDestinationsTab = tabNumber;
+        }
     },
     mounted() {
         new Swiper(this.$refs.bestTours, {
