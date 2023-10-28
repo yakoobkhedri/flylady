@@ -39,6 +39,9 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
+                            <!--  -->
+                            <LanguageSwitcher></LanguageSwitcher>
+                            <!--  -->
                             <div id="languages" class="absolute transition-all duration-300 hidden top-9 right-0 w-48 bg-white text-black z-50 rounded-xl overflow-hidden">
                                 <ul class="list-none font-bold flex flex-col">
                                     <li class="cursor-pointer transition-all border-b px-4 py-2 duration-300 hover:text-violet-600 hover:bg-gray-200">
@@ -338,9 +341,10 @@
 </template>
 
 <script>
-export default {
-
-}
+  import LanguageSwitcher from "@/components/LanguageSwitcher.vue"
+  export default {
+    components: { LanguageSwitcher }
+  }
 </script>
 
 <style>

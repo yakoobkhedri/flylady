@@ -1,0 +1,19 @@
+{
+    "locale": {
+        "en": "English",
+        "ar": "Arabic"
+      },
+    "nav": {
+      "home": "Home",
+      "about": "About"
+    },
+    "home": {
+      "banner": "Explore the world together",
+      "bannerSubTitle": "Find awesome flights, hotel, tour, car and packages",
+      "review":" 0 review | {n} review | {n} reviews",
+      "price":"{price}"
+    },
+    "about": {
+      "header": "About us"
+    }
+  }
