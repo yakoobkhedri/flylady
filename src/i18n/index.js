@@ -3,7 +3,6 @@ import pluralRules from "./rules/pluralization";
 import numberFormats from "./rules/numbers.js";
 import datetimeFormats from "./rules/datetime.js";
 import en from "./locales/en.json";
-import ar from "./locales/ar.json";
 
 export default createI18n({
   locale: import.meta.env.VITE_DEFAULT_LOCALE, // <--- 1
@@ -11,8 +10,7 @@ export default createI18n({
   legacy: false, // <--- 3
   globalInjection: true,
   messages: {
-    en,
-    ar
+    en
   },
   pluralRules,
   numberFormats,

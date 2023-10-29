@@ -102,9 +102,7 @@
                     </a>
                     <ul id="mobileMnu" class="bg-black text-center overflow-y-scroll lg:overflow-visible py-4 lg:bg-transparent z-30 w-72 lg:w-auto text-white items-center lg:justify-end gap-6 fixed lg:static inset-y-0 transition-all duration-300 block lg:flex text-xl lg:text-base">
                         <li class="py-4 lg:py-0 transition-all lg:hover:text-black justify-center duration-500 cursor-pointer">
-                            <a href="index.html" id="home">
-                                Home
-                            </a>
+                            <RouterLink :to="Tr.i18nRoute({ name: 'home' })">{{ $t("nav.home") }}</RouterLink>
                         </li>
                         <li class="py-4 lg:py-0 transition-all lg:hover:text-black relative duration-500  group">
                             <div class="justify-center flex items-center">
@@ -342,8 +340,13 @@
 
 <script>
   import LanguageSwitcher from "@/components/LanguageSwitcher.vue"
+  import Tr from "@/i18n/translation"
+
   export default {
-    components: { LanguageSwitcher }
+    components: { LanguageSwitcher },
+    setup() {
+      return { Tr } 
+    }
   }
 </script>
 
