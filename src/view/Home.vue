@@ -3,7 +3,7 @@
 
         <section class="banner bg-no-repeat bg-center flex justify-center items-center">
             <div class="text-white">
-                <h1 class="text-5xl text-center md:text-7xl font-bold" id="bannerTitle">{{ $t("home.banner") }}</h1>
+                <h1 class="text-5xl text-center md:text-7xl font-bold">{{ $t("home.banner") }}</h1>
                 <h5 id="bannerSubTitle" class="text-center text-2xl mt-4"> {{ $t("home.bannerSubTitle") }} </h5>
             </div>
         </section>
@@ -18,7 +18,7 @@
                             <path
                                 d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z" />
                         </svg>
-                        <p id="flightTab">Flights</p>
+                        <p>{{ $t("nav.flights") }}</p>
                     </div>
                     <div
                         class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
@@ -27,7 +27,7 @@
                             <path
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
                         </svg>
-                        <p id="ToursTab">Tours</p>
+                        <p id="ToursTab">{{ $t("nav.tours") }}</p>
                     </div>
                     <div
                         class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
@@ -38,13 +38,13 @@
                             <path fill-rule="evenodd"
                                 d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                         </svg>
-                        <p id="HotelsTab">Hotels</p>
+                        <p id="HotelsTab">{{ $t("home.hotels") }}</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-7" id="ways">
-                    <p class="text-violet-600 cursor-pointer flightBtn" id="OneWayBtn">One Way</p>
-                    <p class="cursor-pointer flightBtn" id="RoundtripBtn">Roundtrip</p>
-                    <p class="cursor-pointer flightBtn" id="MultiCityBtn">Multi city</p>
+                    <p class="text-violet-600 cursor-pointer flightBtn" id="OneWayBtn">{{ $t("home.one way") }}</p>
+                    <p class="cursor-pointer flightBtn" id="RoundtripBtn">{{ $t("home.roundtrip") }}</p>
+                    <p class="cursor-pointer flightBtn" id="MultiCityBtn">{{ $t("home.multi city") }}</p>
                 </div>
             </div>
             <div id="flights">
@@ -53,7 +53,7 @@
                         <div
                             class="relative grid grid-cols-12 items-start justify-between p-3 gap-4 bg-gray-200 rounded-xl">
                             <div class="col-span-10">
-                                <p class="text-gray-600 font-bold" id="from">From</p>
+                                <p class="text-gray-600 font-bold" id="from">{{ $t("home.from") }}</p>
                                 <input value="New York" class="outline-none text-xl font-bold my-3 bg-transparent">
                                 <p class="text-gray-800 font-bold text-xs" id="fromSubDescription">JFK - John F. Kennedy
                                     International...</p>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="grid grid-cols-12 items-start justify-between p-3 gap-4 pl-7 bg-gray-200 rounded-xl">
                             <div class="col-span-10">
-                                <p class="text-gray-600 font-bold" id="to">To</p>
+                                <p class="text-gray-600 font-bold" id="to">{{ $t("home.to") }}</p>
                                 <input value="London" class="outline-none text-xl font-bold my-3 bg-transparent">
                                 <p class="text-gray-800 font-bold text-xs" id="toSubDescription">LCY, London city airport
                                 </p>
@@ -93,7 +93,7 @@
                     <div class="grid grid-cols-12 items-center gap-4">
                         <div class="p-2 pr-56 bg-gray-200 rounded-xl md:col-span-7 col-span-12">
                             <div>
-                                <p class="text-gray-600 font-bold" id="tripDate">Journey date</p>
+                                <p class="text-gray-600 font-bold" id="tripDate">{{$t("home.Journey date")}}</p>
                                 <input value="22/09/2022" type="date"
                                     class="outline-none text-xl font-bold my-3 bg-transparent">
                                 <p class="text-gray-800 font-bold" id="tripDay">Thursday</p>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="p-2 pr-24 bg-gray-200 rounded-xl md:col-span-5 col-span-12">
                             <div>
-                                <p class="text-gray-600 font-bold" id="passengerClass">Passenger, Class</p>
+                                <p class="text-gray-600 font-bold" id="passengerClass">{{ $t("home.passenger, class") }}</p>
                                 <p class="text-xl font-bold my-3 bg-transparent cursor-pointer" id="passengerNum">0
                                     Passenger</p>
                                 <p class="text-gray-800 font-bold" id="passengerSubTitle">Business</p>
@@ -409,7 +409,7 @@
             </div>
             <a id="search"
                 class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-40 flex justify-center items-center mx-auto mt-10 px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                Search
+                {{ $t("home.search") }}
             </a>
         </section>
 
@@ -418,9 +418,10 @@
                 <div class="xl:col-span-3 col-span-12">
                     <h3 id="imaginationHeading"
                         class="pb-4 text-center md:text-left md:border-b-2 border-violet-600 text-4xl mb-4 text-gray-800 font-bold">
-                        Go beyond your imagination</h3>
+                        {{$t("home.Go beyond your imagination")}}
+                    </h3>
                     <p id="imaginationDesc" class="text-gray-400 font-bold text-center md:text-left">
-                        Discover your ideal experience with us
+                       {{$t("home.Discover your ideal experience with us")}}
                     </p>
                 </div>
                 <div class="xl:col-span-9 col-span-12 bg-white">
@@ -429,7 +430,7 @@
                             <img src="../assets/img//imagination1.png" alt=""
                                 class="absolute inset-0 w-full h-full cursor-pointer transition-all duration-500 group-hover:scale-125">
                             <p id="Discount" class="z-10 absolute inset-x-0 bottom-8 text-white text-center text-4xl">
-                                7% Discount for all Airlines
+                                {{$t("home.7% Discount for all Airlines")}}
                             </p>
                             <div
                                 class="absolute h-32 bg-black opacity-50 w-full -bottom-60  transition-all duration-500 group-hover:bottom-0">
@@ -439,7 +440,7 @@
                             <img src="../assets/img//imagination2.png" alt=""
                                 class="absolute inset-0 w-full h-full cursor-pointer transition-all duration-500 group-hover:scale-125">
                             <p id="travelAround" class="z-10 absolute inset-x-0 bottom-8 text-white text-center text-4xl">
-                                the world<br> Travel around
+                                {{$t("home.the world Travel around")}}
                             </p>
                             <div
                                 class="absolute h-32 bg-black opacity-50 w-full -bottom-60  transition-all duration-500 group-hover:bottom-0">
@@ -449,7 +450,7 @@
                             <img src="../assets/img//imagination3.png" alt=""
                                 class="absolute inset-0 w-full h-full cursor-pointer transition-all duration-500 group-hover:scale-125">
                             <p id="topDeals" class="z-10 absolute inset-x-0 bottom-8 text-white text-center text-4xl">
-                                Luxury resorts<br>top deals
+                                {{$t("home.Luxury resorts top deals")}}
                             </p>
                             <div
                                 class="absolute h-32 bg-black opacity-50 w-full -bottom-60  transition-all duration-500 group-hover:bottom-0">
@@ -462,21 +463,21 @@
 
         <section class="container mx-auto destinations mt-24 px-4">
             <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold"
-                id="TopDestinationsHeading">Top destinations</h2>
+                id="TopDestinationsHeading">{{$t("home.Top Destinations")}}</h2>
             <div class="grid xl:grid-cols-2 grid-cols-1 gap-7 mt-14 lg:h-[799px] text-white">
                 <div
                     class="relative flex justify-center items-center group overflow-hidden rounded-2xl hover:bg-violet-600 transition-all duration-500">
                     <img src="../assets/img/big-img.png" alt=""
                         class="group-hover:scale-125 group-hover:opacity-50 w-full transition-all duration-500 h-full absolute inset-0">
                     <div class="absolute font-bold">
-                        <p class="text-2xl" id="Upto">Up to</p>
+                        <p class="text-2xl" id="Upto">{{$t("home.up to")}}</p>
                         <div>
-                            <span class="text-9xl">50%</span> <span class="text-2xl" id="off">Off</span>
+                            <span class="text-9xl">50%</span> <span class="text-2xl" id="off">{{$t("home.off")}}</span>
                         </div>
-                        <p class="text-2xl" id="Holidaypackages">Holiday packages</p>
+                        <p class="text-2xl" id="Holidaypackages">{{$t("home.Holiday packages")}}</p>
                         <a id="bookNow"
                             class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-40 flex justify-center items-center mt-10 px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                            Book now
+                            {{$t("home.Book now")}}
                         </a>
                     </div>
                 </div>
