@@ -555,7 +555,7 @@
                     </div>
                     <a id="viewAll"
                         class="text-white mt-1 md:mt-[9px] font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 xl:h-14 md:h-14 flex justify-center items-center px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                        View all
+                        {{ $t("home.View all") }}
                     </a>
                 </div>
             </div>
@@ -563,28 +563,28 @@
 
         <section class="container mx-auto Explore mt-24 px-4">
             <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold"
-                id="hotdeals">Explore our hot deals</h2>
+                id="hotdeals">{{$t("home.Explore our hot deals")}}</h2>
             <div
                 class="max-w-5xl w-full px-4 border mx-auto mt-24 shadow-lg rounded-xl flex flex-wrap gap-2 items-center justify-around py-6">
                 <div @click="toggleTabs(1)"
                     :class="{ 'text-black bg-transparent': openTab !== 1, 'bg-violet-600 text-white': openTab === 1, }"
                     class="rounded border-2  border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Hotels
+                    {{$t("home.hotels")}}
                 </div>
                 <div @click="toggleTabs(2)"
                     :class="{ 'text-black bg-transparent': openTab !== 2, 'bg-violet-600 text-white': openTab === 2, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Tours
+                    {{$t("nav.tours")}}
                 </div>
                 <div @click="toggleTabs(3)"
                     :class="{ 'text-black bg-transparent': openTab !== 3, 'bg-violet-600 text-white': openTab === 3, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Space
+                    {{$t("home.Space")}}
                 </div>
                 <div @click="toggleTabs(4)"
                     :class="{ 'text-black bg-transparent': openTab !== 4, 'bg-violet-600 text-white': openTab === 4, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Events
+                    {{$t("home.events")}}
                 </div>
             </div>
             <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-24 gap-7 px-4">
@@ -606,12 +606,12 @@
                         <a class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer"
                             id="KantuahotelThailand">Kantua hotel, Thailand</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700" id="reviewes">({{ $t("home.review") }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p id="Pricestarts">Price starts from</p>
+                            <p id="Pricestarts">{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -634,12 +634,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             paradise international</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -662,12 +662,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             kualalampur</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -690,12 +690,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             deluxe</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -718,12 +718,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             rajavumi</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -746,12 +746,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Thailand
                             grand suit</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -774,12 +774,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Zefi
                             resort and spa</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -802,12 +802,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Manila
                             international resort</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -829,12 +829,12 @@
                         <a class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer"
                             id="KantuahotelThailand">Kantua hotel, Thailand</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700" id="reviewes">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p id="Pricestarts">Price starts from</p>
+                            <p id="Pricestarts">{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -857,12 +857,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             paradise international</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -885,12 +885,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             kualalampur</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -913,12 +913,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             deluxe</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -941,12 +941,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             rajavumi</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -969,12 +969,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Thailand
                             grand suit</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -997,12 +997,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Zefi
                             resort and spa</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1025,12 +1025,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Manila
                             international resort</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1052,12 +1052,12 @@
                         <a class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer"
                             id="KantuahotelThailand">Kantua hotel, Thailand</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700" id="reviewes">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p id="Pricestarts">Price starts from</p>
+                            <p id="Pricestarts">{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1080,12 +1080,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             paradise international</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1108,12 +1108,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             kualalampur</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1136,12 +1136,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             deluxe</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1164,12 +1164,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             rajavumi</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1192,12 +1192,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Zefi
                             resort and spa</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1220,12 +1220,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Manila
                             international resort</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1247,12 +1247,12 @@
                         <a class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer"
                             id="KantuahotelThailand">Kantua hotel, Thailand</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3" id="Excellent">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700" id="reviewes">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p id="Pricestarts">Price starts from</p>
+                            <p id="Pricestarts">{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1275,12 +1275,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             paradise international</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1303,12 +1303,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             kualalampur</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1331,12 +1331,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             deluxe</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1359,12 +1359,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                             rajavumi</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1387,12 +1387,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Thailand
                             grand suit</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1415,12 +1415,12 @@
                             class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Zefi
                             resort and spa</a>
                         <div class="flex items-center mb-4">
-                            <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                            <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                             <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                         </div>
                         <div class="flex items-end">
                             <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                            <p>Price starts from</p>
+                            <p>{{$t("home.Price starts from")}}</p>
                         </div>
                     </div>
                 </div>
@@ -1432,14 +1432,14 @@
                         class="group-hover:scale-125 group-hover:opacity-50 w-full transition-all duration-500 h-full absolute inset-0">
                     <div class="absolute font-bold text-white left-6 bottom-6">
                         <div>
-                            <span class="text-4xl" id="SpecialOffers">Special Offers</span>
+                            <span class="text-4xl" id="SpecialOffers">{{ $t("home.Special Offers") }}</span>
                         </div>
-                        <p class="text-lg my-10 pr-8" id="SpecialOffersDesc">Invidunt ut labore et dolore magna aliquyam
-                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                            kasd dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                        <p class="text-lg my-10 pr-8" id="SpecialOffersDesc">
+                          {{$t("home.lorem")}}    
+                        </p>
                         <a id="Holidaydeals"
                             class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-44 flex justify-center items-center px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                            Holiday deals
+                            {{$t("home.Holiday deals")}}
                         </a>
                     </div>
                 </div>
@@ -1450,13 +1450,12 @@
                             class="group-hover:scale-125 group-hover:opacity-50 w-full transition-all duration-500 h-full absolute inset-0">
                         <div class="absolute font-bold text-white left-6 bottom-6">
                             <div>
-                                <span class="text-4xl">News letter</span>
+                                <span class="text-4xl">{{ $t("home.News letter") }}</span>
                             </div>
-                            <p class="text-lg my-10 pr-8">Invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                voluptua. At vero eos et.</p>
+                            <p class="text-lg my-10 pr-8"> {{$t("home.lorem")}}</p>
                             <a
                                 class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-44 flex justify-center items-center px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                                Subscribe now
+                                {{$t("home.Subscribe now")}}
                             </a>
                         </div>
                     </div>
@@ -1466,13 +1465,12 @@
                             class="group-hover:scale-125 group-hover:opacity-50 w-full transition-all duration-500 h-full absolute inset-0">
                         <div class="absolute font-bold text-white left-6 bottom-6">
                             <div>
-                                <span class="text-4xl">Travel tips</span>
+                                <span class="text-4xl">{{$t("home.Travel tips")}}</span>
                             </div>
-                            <p class="text-lg my-10 pr-8">Invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                voluptua. At vero eos et.</p>
+                            <p class="text-lg my-10 pr-8"> {{$t("home.lorem")}}    </p>
                             <a
-                                class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-40 flex justify-center items-center px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                                Get tips
+                                class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-48 flex justify-center items-center px-4 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
+                                {{$t("home.Get tips")}}
                             </a>
                         </div>
                     </div>
@@ -1483,7 +1481,7 @@
         <section class="container mx-auto bestpromotional mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
-                Our best promotional tours</h2>
+                {{$t("home.Our best promotional tours")}}</h2>
             <!-- Swiper -->
             <div class="swiper mySwiper1 mt-24 pb-14 md:px-6" ref="bestTours">
                 <div class="swiper-wrapper">
@@ -1507,12 +1505,12 @@
                                     class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Kantua
                                     hotel, Thailand</a>
                                 <div class="flex items-center mb-4">
-                                    <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                                    <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                                     <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                                 </div>
                                 <div class="flex items-end">
                                     <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                                    <p>Price starts from</p>
+                                    <p>{{$t("home.Price starts from")}}</p>
                                 </div>
                             </div>
                         </div>
@@ -1537,12 +1535,12 @@
                                     class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                                     paradise international</a>
                                 <div class="flex items-center mb-4">
-                                    <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                                    <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                                     <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                                 </div>
                                 <div class="flex items-end">
                                     <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                                    <p>Price starts from</p>
+                                    <p>{{$t("home.Price starts from")}}</p>
                                 </div>
                             </div>
                         </div>
@@ -1567,12 +1565,12 @@
                                     class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                                     kualalampur</a>
                                 <div class="flex items-center mb-4">
-                                    <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                                    <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                                     <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                                 </div>
                                 <div class="flex items-end">
                                     <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                                    <p>Price starts from</p>
+                                    <p>{{$t("home.Price starts from")}}</p>
                                 </div>
                             </div>
                         </div>
@@ -1597,12 +1595,12 @@
                                     class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                                     deluxe</a>
                                 <div class="flex items-center mb-4">
-                                    <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                                    <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                                     <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                                 </div>
                                 <div class="flex items-end">
                                     <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                                    <p>Price starts from</p>
+                                    <p>{{$t("home.Price starts from")}}</p>
                                 </div>
                             </div>
                         </div>
@@ -1627,12 +1625,12 @@
                                     class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                                     paradise international</a>
                                 <div class="flex items-center mb-4">
-                                    <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                                    <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                                     <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                                 </div>
                                 <div class="flex items-end">
                                     <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                                    <p>Price starts from</p>
+                                    <p>{{$t("home.Price starts from")}}</p>
                                 </div>
                             </div>
                         </div>
@@ -1657,12 +1655,12 @@
                                     class="transition-all duration-500 hover:text-violet-600 text-lg text-gray-900 font-bold mb-4 block cursor-pointer">Hotel
                                     kualalampur</a>
                                 <div class="flex items-center mb-4">
-                                    <p class="text-violet-600 mr-3">4.8/5 Excellent</p>
+                                    <p class="text-violet-600 mr-3">4.8/5 {{$t("home.Excellent")}}</p>
                                     <p class="text-gray-700">({{ $t("home.review",134) }})</p>
                                 </div>
                                 <div class="flex items-end">
                                     <p class="font-bold text-3xl mr-3">{{ $t("home.price", { price: $n(1456, "currencyFormat") }) }}</p>
-                                    <p>Price starts from</p>
+                                    <p>{{$t("home.Price starts from")}}</p>
                                 </div>
                             </div>
                         </div>
@@ -1674,7 +1672,7 @@
         <section class="container mx-auto yourdestinations mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
-                Destinations for you</h2>
+                {{$t("home.Destinations for you")}}</h2>
             <div
                 class="w-full max-w-5xl mx-auto mt-24 px-5 border shadow-xl rounded-xl flex flex-wrap gap-4 items-center justify-around py-6">
                 <div @click="toggleDestinationsTabs(1)"
