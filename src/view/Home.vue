@@ -1678,37 +1678,37 @@
                 <div @click="toggleDestinationsTabs(1)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 1, 'bg-violet-600 text-white': openDestinationsTab === 1, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Nepal
+                    {{$t("home.nepal")}}
                 </div>
                 <div @click="toggleDestinationsTabs(2)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 2, 'bg-violet-600 text-white': openDestinationsTab === 2, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Malaysia
+                    {{$t("home.Malaysia")}}
                 </div>
                 <div @click="toggleDestinationsTabs(3)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 3, 'bg-violet-600 text-white': openDestinationsTab === 3, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Indonesia
+                    {{$t("home.Indonesia")}}
                 </div>
                 <div @click="toggleDestinationsTabs(4)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 4, 'bg-violet-600 text-white': openDestinationsTab === 4, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Turkey
+                   {{ $t("home.Turkey") }}
                 </div>
                 <div @click="toggleDestinationsTabs(5)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 5, 'bg-violet-600 text-white': openDestinationsTab === 5, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    China
+                    {{ $t("home.China") }}
                 </div>
                 <div @click="toggleDestinationsTabs(6)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 6, 'bg-violet-600 text-white': openDestinationsTab === 6, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Darjeeling
+                    {{ $t("home.Darjeeling") }}
                 </div>
                 <div @click="toggleDestinationsTabs(7)"
                     :class="{ 'text-black bg-transparent': openDestinationsTab !== 7, 'bg-violet-600 text-white': openDestinationsTab === 7, }"
                     class="rounded border-2 border-violet-600 py-2 px-7 gap-2 cursor-pointer">
-                    Italy
+                    {{$t("home.Italy")}}
                 </div>
             </div>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-24 gap-6">
@@ -1717,10 +1717,11 @@
                     <img src="../assets/img/destination-small1.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1730,10 +1731,11 @@
                     <img src="../assets/img/destination-small2.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1743,10 +1745,11 @@
                     <img src="../assets/img/destination-small3.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1756,10 +1759,11 @@
                     <img src="../assets/img/destination-small4.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1769,10 +1773,11 @@
                     <img src="../assets/img/destination-small5.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1782,10 +1787,11 @@
                     <img src="../assets/img/destination-small6.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1795,10 +1801,11 @@
                     <img src="../assets/img/destination-small1.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1808,10 +1815,11 @@
                     <img src="../assets/img/destination-small2.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1821,10 +1829,11 @@
                     <img src="../assets/img/destination-small3.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1834,10 +1843,11 @@
                     <img src="../assets/img/destination-small4.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1847,10 +1857,11 @@
                     <img src="../assets/img/destination-small5.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1860,10 +1871,11 @@
                     <img src="../assets/img/destination-small6.png">
                     <div class="p-5">
                         <a
-                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">Everest
-                            trek to Base Camp</a>
+                            class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer">
+                           {{$t("home.Everest trek to Base Camp")}}
+                        </a>
                         <div class="flex items-center">
-                            <span class="font-bold text-gray-600">Price starts at</span>
+                            <span class="font-bold text-gray-600">{{ $t("home.Price starts at") }}</span>
                             <span class="text-violet-600 font-bold ml-2">$105.00</span>
                         </div>
                     </div>
@@ -1875,18 +1887,18 @@
         <section class="container mx-auto latestTravel mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
-                Latest travel news</h2>
+                {{ $t("home.Latest travel news") }}</h2>
             <div class="grid lg:grid-cols-2 grid-cols-1 justify-center gap-4 mt-20">
                 <div>
                     <div class="flex items-scretch mb-4 overflow-hidden bg-white">
                         <img src="../assets/img/destination-small6.png">
                         <div class="md:p-5 p-3">
                             <a
-                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">Revolutionising
-                                the travel industry, one partnership at a time</a>
+                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">
+                                {{$t("home.Revolutionising the travel industry, one partnership at a time")}}</a>
                             <div class="flex items-center">
                                 <span class="text-violet-600 font-bold ml-2">{{ $d(new Date(), "longFormat") }}</span>
-                                <span class="font-bold text-gray-600 ml-7">5min read</span>
+                                <span class="font-bold text-gray-600 ml-7">5  {{ $t("home.min read") }}</span>
                             </div>
                         </div>
                     </div>
@@ -1894,11 +1906,12 @@
                         <img src="../assets/img/small2.png">
                         <div class="md:p-5 p-3">
                             <a
-                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">it
-                                is a long established fact that a reader will be distracted.</a>
+                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">
+                                {{$t("home.it is a long established fact that a reader will be distracted")}}
+                            </a>
                             <div class="flex items-center">
                                 <span class="text-violet-600 font-bold ml-2">{{ $d(new Date(), "longFormat") }}</span>
-                                <span class="font-bold text-gray-600 ml-7">5min read</span>
+                                <span class="font-bold text-gray-600 ml-7">5 {{ $t("home.min read") }}</span>
                             </div>
                         </div>
                     </div>
@@ -1906,11 +1919,12 @@
                         <img src="../assets/img/small3.png">
                         <div class="md:p-5 p-3">
                             <a
-                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">There
-                                are many variations of passages of sum available</a>
+                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">
+                                {{$t("home.There are many variations of passages of sum available")}}
+                            </a>
                             <div class="flex items-center">
                                 <span class="text-violet-600 font-bold ml-2">{{ $d(new Date(), "longFormat") }}</span>
-                                <span class="font-bold text-gray-600 ml-7">5min read</span>
+                                <span class="font-bold text-gray-600 ml-7">5 {{ $t("home.min read") }}</span>
                             </div>
                         </div>
                     </div>
@@ -1918,17 +1932,18 @@
                         <img src="../assets/img/small4.png">
                         <div class="md:p-5 p-3">
                             <a
-                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">Contrary
-                                to popular belief, Lorem Ipsum is not simply.</a>
+                                class="md:text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36">
+                                {{$t("home.Contrary to popular belief, Lorem Ipsum is not simply")}}
+                            </a>
                             <div class="flex items-center">
                                 <span class="text-violet-600 font-bold ml-2">{{ $d(new Date(), "longFormat") }}</span>
-                                <span class="font-bold text-gray-600 ml-7">5min read</span>
+                                <span class="font-bold text-gray-600 ml-7">5 {{ $t("home.min read") }}</span>
                             </div>
                         </div>
                     </div>
                     <a href="News.html"
                         class="flex items-center transition-all duration-500 mt-6 hover:text-black cursor-pointer text-violet-600 font-bold">
-                        <span class="text-2xl">See all article</span>
+                        <span class="text-2xl">{{$t("home.See all article")}}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 mt-2 ml-2 font-bold" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -1941,19 +1956,18 @@
                             class="w-full h-full transition-all duration-500 hover:scale-125 cursor-pointer">
                     </div>
                     <a
-                        class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36 my-5">There
-                        are many variations of passages available but</a>
+                        class="text-xl font-bold text-gray-700 mb-3 block transition-all duration-500 hover:text-violet-600 cursor-pointer md:pr-36 my-5">
+                        {{$t("home.There are many variations of passages available but")}}
+                    </a>
                     <p class="text-xl text-gray-500">
-                        It is a long established fact that a reader will be distracted by the readable content of. The point
-                        of using Lorem Ipsum is that it has a more
+                        {{$t("home.article1")}}
                     </p>
                     <p class="text-xl text-gray-500 mt-5">
-                        It is a long established fact that a reader will be distracted by the readable long established fact
-                        that a reader will be distracted content of a page when looking at its layout.
+                        {{$t("home.article1")}}
                     </p>
                     <a href="NewsDetails.html"
                         class="flex items-center transition-all duration-500 mt-2 hover:text-black cursor-pointer text-violet-600 font-bold">
-                        <span class="text-2xl">Read full article</span>
+                        <span class="text-2xl">{{$t("home.Read full article")}}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 mt-2 ml-2 font-bold" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -1966,7 +1980,8 @@
         <section class="container mx-auto Ourpartners mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
-                Our partners</h2>
+                 {{ $t("home.Our partners") }}
+            </h2>
             <!-- Swiper -->
             <div class="swiper mySwiper2 my-24" ref="brands">
                 <div class="swiper-wrapper">
@@ -2017,8 +2032,8 @@
                     <div class="flex flex-wrap justify-center md:justify-start items-center">
                         <img src="../assets/img/email.png" alt="" class="md:w-36 w-24">
                         <div class="ml-4">
-                            <p class="font-bold mb-2 mt-2 text-xl">Get the latest news and offers</p>
-                            <h3 class="text-4xl font-bold">Subscribe to our newsletter</h3>
+                            <p class="font-bold mb-2 mt-2 text-xl">{{$t("home.Get the latest news and offers")}}</p>
+                            <h3 class="text-4xl font-bold">{{$t("home.Subscribe to our newsletter")}}</h3>
                         </div>
                     </div>
                     <form class="flex items-center">
@@ -2026,7 +2041,7 @@
                             class="transition-all duration-150 w-full shadow-xl outline-2 pl-3 h-16 rounded-tl-lg rounded-bl-lg border-none focus:outline-dashed outline-violet-600">
                         <a
                             class="text-white font-bold rounded-lg rounded-tl-none rounded-bl-none cursor-pointer bg-violet-600 border-2 border-violet-600 py-5 w-40 flex justify-center items-center ml-auto px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
-                            Subscribe
+                            {{$t("home.Subscribe")}}
                         </a>
                     </form>
                 </div>
