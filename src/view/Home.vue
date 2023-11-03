@@ -1,5 +1,7 @@
 <template>
-    <div>
+    <main>
+
+        <!-- banner -->
 
         <section class="banner bg-no-repeat bg-center flex justify-center items-center">
             <div class="text-white">
@@ -8,11 +10,13 @@
             </div>
         </section>
 
+        <!-- booking -->
+
         <section class="booking p-7 container mx-auto mt-[-166px] bg-white rounded-3xl shadow-lg overflow-hidden">
             <div class="flex md:justify-between justify-center gap-5 items-center font-bold flex-wrap">
                 <div class="flex items-center gap-7">
-                    <div
-                        class="tripType flex items-center rounded-lg border-2 bg-violet-600 text-white border-violet-600 py-2 px-4 gap-2 cursor-pointer">
+                    <div @click="toggleBookingTabs(1)" :class="{ 'text-black bg-transparent': openBookingTab !== 1, 'bg-violet-600 text-white': openBookingTab === 1, }"
+                        class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16 " height="16" fill="currentColor"
                             class="bi bi-airplane-fill rotate-45" viewBox="0 0 16 16">
                             <path
@@ -20,7 +24,8 @@
                         </svg>
                         <p>{{ $t("nav.flights") }}</p>
                     </div>
-                    <div
+                    <div @click="toggleBookingTabs(2)"
+                    :class="{ 'text-black bg-transparent': openBookingTab !== 2, 'bg-violet-600 text-white': openBookingTab === 2, }"
                         class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-globe" viewBox="0 0 16 16">
@@ -29,7 +34,8 @@
                         </svg>
                         <p id="ToursTab">{{ $t("nav.tours") }}</p>
                     </div>
-                    <div
+                    <div @click="toggleBookingTabs(3)"
+                    :class="{ 'text-black bg-transparent': openBookingTab !== 3, 'bg-violet-600 text-white': openBookingTab === 3, }"
                         class="tripType flex items-center rounded-lg border-2 border-violet-600 py-2 px-4 gap-2 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-house-fill" viewBox="0 0 16 16">
@@ -41,14 +47,14 @@
                         <p id="HotelsTab">{{ $t("home.hotels") }}</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-7" id="ways">
-                    <p class="text-violet-600 cursor-pointer flightBtn" id="OneWayBtn">{{ $t("home.one way") }}</p>
-                    <p class="cursor-pointer flightBtn" id="RoundtripBtn">{{ $t("home.roundtrip") }}</p>
-                    <p class="cursor-pointer flightBtn" id="MultiCityBtn">{{ $t("home.multi city") }}</p>
+                <div v-bind:class="{ 'hidden': openBookingTab !== 1, 'flex': openBookingTab === 1 }" class="flex items-center gap-7">
+                    <p @click="toggleWayTabs(1)" :class="{ 'text-black': openWayTab !== 1, 'text-violet-600': openWayTab === 1,}" class="cursor-pointer flightBtn" id="OneWayBtn">{{ $t("home.one way") }}</p>
+                    <p @click="toggleWayTabs(2)" :class="{ 'text-black': openWayTab !== 2, 'text-violet-600': openWayTab === 2,}" class="cursor-pointer flightBtn" id="RoundtripBtn">{{ $t("home.roundtrip") }}</p>
+                    <p @click="toggleWayTabs(3)" :class="{ 'text-black': openWayTab !== 3, 'text-violet-600': openWayTab === 3,}" class="cursor-pointer flightBtn" id="MultiCityBtn">{{ $t("home.multi city") }}</p>
                 </div>
             </div>
-            <div id="flights">
-                <div id="OneWay" class="grid xl:grid-cols-2 grid-cols-1 items-center justify-center mt-10 gap-6">
+            <div v-bind:class="{ 'hidden': openBookingTab !== 1, 'block': openBookingTab === 1 }">
+                <div  v-bind:class="{ 'hidden': openWayTab !== 1, 'grid': openWayTab === 1 }" class="xl:grid-cols-2 grid-cols-1 items-center justify-center mt-10 gap-6">
                     <div class="grid items-center justify-center lg:grid-cols-2 grid-cols-1 gap-4">
                         <div
                             class="relative grid grid-cols-12 items-start justify-between p-3 gap-4 bg-gray-200 rounded-xl">
@@ -109,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="Roundtrip" class="hidden">
+                <div v-bind:class="{ 'hidden': openWayTab !== 2, 'block': openWayTab === 2 }">
                     <div class="grid xl:grid-cols-2 grid-cols-1 items-center justify-center mt-10 gap-6">
                         <div class="grid items-center justify-center lg:grid-cols-2 grid-cols-1 gap-4">
                             <div
@@ -181,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="MultiCity" class="hidden">
+                <div v-bind:class="{ 'hidden': openWayTab !== 3, 'block': openWayTab === 3 }">
                     <div id="flightLists">
                         <div class="grid xl:grid-cols-2 grid-cols-1 items-center justify-center mt-10 gap-6">
                             <div class="grid items-center justify-center lg:grid-cols-2 grid-cols-1 gap-4">
@@ -325,7 +331,7 @@
                     </a>
                 </div>
             </div>
-            <div id="tours" class="mt-8 hidden">
+            <div v-bind:class="{ 'hidden': openBookingTab !== 2, 'block': openBookingTab === 2 }" class="mt-8">
                 <div class="grid xl:grid-cols-2 grid-cols-1 items-center w-full gap-7">
                     <div>
                         <div class="relative flex items-start p-4 gap-6 bg-gray-200 rounded-xl">
@@ -366,7 +372,7 @@
                     </div>
                 </div>
             </div>
-            <div id="hotels" class="mt-8 hidden">
+            <div v-bind:class="{ 'hidden': openBookingTab !== 3, 'block': openBookingTab === 3 }" class="mt-8">
                 <div class="grid xl:grid-cols-2 grid-cols-1 items-center w-full gap-7">
                     <div>
                         <div class="relative flex items-start p-4 gap-6 bg-gray-200 rounded-xl">
@@ -407,11 +413,14 @@
                     </div>
                 </div>
             </div>
+            <!-- search -->
             <a id="search"
                 class="text-white font-bold rounded-lg cursor-pointer bg-violet-600 border-2 border-violet-600 py-3 w-40 flex justify-center items-center mx-auto mt-10 px-6 transition-all duration-500 hover:bg-slate-900 hover:border-slate-900">
                 {{ $t("home.search") }}
             </a>
         </section>
+
+        <!-- imagination -->
 
         <section class="imagination container mx-auto mt-24">
             <div class="grid grid-cols-12 gap-8 items-center">
@@ -460,6 +469,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Top Destinations -->
 
         <section class="container mx-auto destinations mt-24 px-4">
             <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold"
@@ -560,6 +571,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- hot deals -->
 
         <section class="container mx-auto Explore mt-24 px-4">
             <h2 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold"
@@ -1478,6 +1491,8 @@
             </div>
         </section>
 
+        <!-- best tours -->
+
         <section class="container mx-auto bestpromotional mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
@@ -1668,6 +1683,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Destinations -->
 
         <section class="container mx-auto yourdestinations mt-24 px-4">
             <h2
@@ -1884,6 +1901,8 @@
 
         </section>
 
+        <!-- article -->
+
         <section class="container mx-auto latestTravel mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
@@ -1977,6 +1996,8 @@
             </div>
         </section>
 
+        <!-- brands -->
+
         <section class="container mx-auto Ourpartners mt-24 px-4">
             <h2
                 class="before:w-56 before:-bottom-5 before:right-0 before:left-0 before:mx-auto before:h-1 before:bg-violet-600 before:absolute relative  text-center text-gray-900 text-4xl font-bold">
@@ -2026,6 +2047,7 @@
             </div>
         </section>
 
+        <!-- newsLetter -->
         <section class="newsLetter bg-[#F3F6FD] py-24 px-4">
             <div class="container mx-auto">
                 <div class="grid lg:grid-cols-2 grid-cols-1 gap-7 text-center sm:text-start">
@@ -2048,7 +2070,7 @@
             </div>
         </section>
 
-    </div>
+    </main>
 </template>
 
 <script>
@@ -2066,11 +2088,19 @@ export default {
     },
     data() {
         return {
+            openBookingTab: 1,
+            openWayTab: 1,
             openTab: 1,
             openDestinationsTab: 1,
         };
     },
     methods: {
+        toggleBookingTabs:function (tabNumber){
+            this.openBookingTab= tabNumber;
+        },
+        toggleWayTabs:function (tabNumber){
+            this.openWayTab= tabNumber;
+        },
         toggleTabs: function (tabNumber) {
             this.openTab = tabNumber;
         },
